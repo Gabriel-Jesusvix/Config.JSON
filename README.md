@@ -1,97 +1,112 @@
-# Config.JSON
-Configuração VSCode Settings
-
 {
-  "terminal.integrated.fontSize": 14,
-
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "newUntitledFile",
-
-  "editor.tabSize": 2,
-  "editor.fontSize": 18,
-  "editor.lineHeight": 26,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "node_modules": true
-  },
-
-  "explorer.compactFolders": false,
-  "editor.renderLineHighlight": "gutter",
-  "workbench.editor.labelFormat": "short",
-  "extensions.ignoreRecommendations": true,
-
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-
-  "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  
-  "editor.rulers": [80, 120],
-  
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-
-  "files.associations": {
-    ".sequelizerc": "javascript",
-    ".stylelintrc": "json",
-    ".prettierrc": "json"
-  },
-
-  "window.zoomLevel": -1,
-
-  "emmet.syntaxProfiles": { "javascript": "jsx" },
-  "emmet.includeLanguages": { "javascript": "javascriptreact" },
-
-  
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-
-  "git.enableSmartCommit": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "liveshare.featureSet": "insiders",
-
-  "typescript.tsserver.log": "verbose",
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  // "material-icon-theme.activeIconPack": "nest",
-  "screencastMode.onlyKeyboardShortcuts": true,
-
-  "material-icon-theme.folders.associations": {
-    "infra": "app",
-    "entities": "class",
-    "schemas": "class",
-    "typeorm": "database",
-    "repositories": "mappings",
-    "http": "container",
-    "migrations": "tools",
-    "modules": "components",
-    "implementations": "core",
-    "dtos": "typescript",
-    "fakes": "mock",
-    "websockets": "pipe",
-    "protos": "pipe",
-    "grpc": "pipe"
-  },
-
-  "material-icon-theme.files.associations": {
-    "ormconfig.json": "database",
-    "tsconfig.json": "tune",
-    "*.proto": "3d"
-  },
-
-  "workbench.colorTheme": "Dracula",
-  "liveServer.settings.donotVerifyTags": true,
-  
-}
+    // Workbench
+    "workbench.iconTheme": "symbols",
+    "workbench.editor.labelFormat": "short",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.activityBar.location": "hidden",
+    "workbench.sideBar.location": "right",
+    // Editor settings
+    "editor.wordWrap": "on",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "terminal.integrated.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.rulers": [80, 120],
+    "editor.parameterHints.enabled": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.fixAll.eslint": "always",
+      "source.addMissingImports": "always",
+      "source.sortMembers": "always",
+      "source.organizeImports": "always",
+      
+    },
+    "[prisma]": {
+      "editor.formatOnSave": true,
+    },
+      
+    // VSCode stuff
+    "breadcrumbs.enabled": true,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    
+    // Emmet
+    "emmet.syntaxProfiles": { "javascript": "jsx" },
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+    
+    // Extensions
+    "extensions.ignoreRecommendations": true,
+    "material-icon-theme.folders.associations": {
+      "domain": "core",
+      "infra": "app",
+      "main": "public",
+      "presentation": "connection",
+      "cryptography": "secure",
+      "entities": "class",
+      "repositories": "mappings",
+      "protocols": "resource",
+      "useCases": "components",
+      "subcomponents": "components",
+      "adapters": "connection",
+      "factories": "container",
+      "globals": "global",
+      "ui": "views"
+    },
+    "material-icon-theme.files.associations": {
+      "ormconfig.json": "database",
+      "tsconfig.json": "tune",
+      ".lintstagedrc.json": "tune"
+    },
+    "polacode.transparentBackground": true,
+    "polacode.shadow": "none",
+    "github.copilot.enable": {
+      "*": true,
+      "yaml": false,
+      "plaintext": true,
+      "markdown": false
+    },
+    "gitlens.defaultDateFormat": null,
+    "gitlens.hovers.currentLine.over": "line",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.confirmSync": false,
+    "editor.inlineSuggest.enabled": true,
+    "symbols.hidesExplorerArrows": false,
+    "tabnine.experimentalAutoImports": true,
+    "editor.occurrencesHighlight": "off",
+    "editor.selectionHighlight": false,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "terminal.integrated.env.osx": {
+      "FIG_NEW_SESSION": "1"
+    },
+    "editor.accessibilitySupport": "off",
+    "totalTypeScript.hiddenTips": [
+      "ts-object-type",
+      "optional-object-property",
+      "type-alias-declaration",
+      "basic-types",
+      "union-type",
+      "literal-type"
+    ],
+    "workbench.editor.empty.hint": "hidden",
+    "git.suggestSmartCommit": false,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "package.json": ".eslint*, package-lock*,.prettierignore,.prettierrc* ,prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest* ,.gitignore, .editorconfig, .env*, .env.example*, babel*",
+      "Gemfile": "Gemfile.lock",
+      "tailwind.config.js": "tailwind.config*, postcss.config*",
+      ".env.local": ".env*",
+      ".env": ".env*"
+    },
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Material Theme Ocean",
+  }
